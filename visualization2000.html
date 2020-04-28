@@ -14,7 +14,7 @@
 	<li>Each day, each infected person (who isn't quarantined) is in contact with 30 people <div style="display:none;">(exposures per week)</div>. </li>
 	<li> However, depending on the distancing compliance (rec?) and handwashing (infector?), the contact may not result in an "exposure". In this scenario, there is noHandwash=1.0 and distancingCompliance=0.</li>
 	<li> If exposed, there is a 5% change of getting infected.	If infected, there is a 25% asymptomatic rate.</li>
-	<li> When they are infected, if they are SYMPTOMATIC, there is a 50% chance they are quarantined.</li>
+	<li> When they are infected, if they are SYMPTOMATIC, there is a 50% chance they are quarantined.
 	<li> There is also "pod quarantining" at 1%. What this means is that each person who is symptomatic in a pod has 1% chance of causing the </i>whole</i> pod to go into pod quarantining. If there are 50 symptomatic people, this will be a 50% chance of pod quarantine. </li>
 	<li>If one is quarantined, there is no chance of infection.</li> <br>
 
@@ -41,19 +41,18 @@ InitializeEverything0({ \n
 </code>
 		<section>
 			<h2>Select Demo</h2>
-		
+			<div>
+				<input type="number" id="week" name="week" min="0" max="100" value="0">
+			</div>
 				<div id="run1" class="demo">
 					Run
 				</div>
 				<div id="next" class="demo">
 					Next
 				</div>
+				
 
-
-				<div>
-					<input type="number" id="week" name="week"
-       min="0" max="100" value="0">
-				</div>
+				
 				<div id="colorSquares" class="demo">
 					colorSquares
 				</div>
@@ -69,13 +68,15 @@ InitializeEverything0({ \n
 
 
 		<section>
-			<h2>Legend</h2>
-
+			<h2 style="padding-left: 90px;" >Legend</h2>
+			<ul>
+				<li>Legend1  </li>  <li>Legend2  </li>  <li>Legend3  </li>  <l1>Legend4  </l1>  <l1>Legend5  </l1><l1>Legend6  </l1>
+			  </ul>
 
 			<h3 id="legend"></h3>
 		<section>
 
-		<canvas id="canvas2" width="1000" height="40">
+		
 
 
 </body>
